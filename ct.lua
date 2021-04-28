@@ -4,20 +4,6 @@ local colors = {
   highlight = "$00342D1D",
   red = "$006F69F0"
 }
-local highlight
-highlight = function(x)
-  x.color = colors.highlight
-end
-local default
-default = function(x)
-  x.color = colors.default
-end
-form.background.OnMouseDown = function()
-  return form.DragNow()
-end
-form.titlebar.OnMouseDown = function()
-  return form.DragNow()
-end
 local sethover
 sethover = function(object, enter, leave)
   object.OnMouseEnter = function(sender)
@@ -29,4 +15,11 @@ sethover = function(object, enter, leave)
 end
 sethover(form.minimize, colors.highlight, colors.default)
 sethover(form.closeicon, colors.red, colors.default)
+sethover(form.menu1, colors.highlight, colors.default)
+form.background.OnMouseDown = function()
+  return form.DragNow()
+end
+form.titlebar.OnMouseDown = function()
+  return form.DragNow()
+end
 return form.show()
