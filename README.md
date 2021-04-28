@@ -1,6 +1,6 @@
 # Growx
 
-Growx is an open sourc growtopia cheat written in moonscript and powered by cheat engine.
+Growx is an open source growtopia cheat written in moonscript and powered by cheat engine.
 
 ## Why?
 Attempt to make a trustable cheat
